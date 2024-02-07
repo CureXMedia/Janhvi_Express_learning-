@@ -24,7 +24,7 @@ const memory = new ConversationSummaryMemory({
 
 
 
-const model = new OpenAI({ temperature: 0.9, verbose: true , modelName: "gpt-3.5-turbo-1106", streaming : true,
+const model = new OpenAI({ temperature: 0.9, verbose: false, modelName: "gpt-3.5-turbo-1106", streaming : true,
 openAIApiKey,});  
 
 const vectorstore = new MongoDBAtlasVectorSearch(
