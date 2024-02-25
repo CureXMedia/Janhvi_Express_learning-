@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBox</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+p {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#227726;
+}
+.container {
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    width: calc(50% - 50px); /* Adjust width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#outputBox {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: calc(100% - 50px);
+    height: 150px;
+    border-radius: 15px;
+    resize: both;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+    <!-- <input type="Ask anything" name="" id=""> -->
+   <div class="box">
+    <p >CHATbot</p>
+    <!-- Output box to display OpenAI GPT-3.5-turbo response -->
+    <div id="outputBox" style="margin-top: 20px; border: 1px solid #ccc; 
+    padding: 10px; width: 400px; height: 150px; resize: both;"></div>
+    
+    
+    
+    <form id="myForm">
+      <label for="userInput">Chat with me</label>
+      <input type="text" id="userInput" name="userInput" required style="width: 300px;">
+      <!-- <button type="submit">Send</button> -->
+      <button type="submit" id="stream">send</button>
+      <pre id="messages"></pre>
+
+    </form>
+   </div> 
+  </body>
+  <script type="module" src="/backend.js"></script>
+</html>
+
+
+
+
