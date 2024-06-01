@@ -5,22 +5,18 @@ This repository contains an AI chatbot application built with JavaScript, LangCh
 Features
 
 Sarcastic AI chatbot powered by LangChain
-
 Front-end interface built with HTML and CSS
-
 Express.js server for handling API requests
 
 
 Prerequisites
 
 Before running the application, ensure you have the following installed:
-
 Node.js
-
 npm (Node Package Manager)
-
 OpenAI API key
 
 
 Type your message in the input field and press Enter. The chatbot will respond with a sarcastic and witty reply.
+<img src="chatbot-snap.png" alt="Alt Text" width="200" height="100">
 
