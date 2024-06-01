@@ -18,5 +18,5 @@ OpenAI API key
 
 
 Type your message in the input field and press Enter. The chatbot will respond with a sarcastic and witty reply.
-<img src="chatbot-snap.png" alt="Alt Text" width="200" height="100">
+<img src="chatbot-snap.png" alt="Alt Text" width="800" height="800">
 
